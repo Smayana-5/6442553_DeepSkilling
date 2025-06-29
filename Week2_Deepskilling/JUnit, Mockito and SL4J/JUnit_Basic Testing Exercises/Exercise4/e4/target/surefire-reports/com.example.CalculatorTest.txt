@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: com.example.CalculatorTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.12 s - in com.example.CalculatorTest
+com.example.CalculatorTest.testClear  Time elapsed: 0.015 s
+com.example.CalculatorTest.testMultiplication  Time elapsed: 0.001 s
+com.example.CalculatorTest.testAddition  Time elapsed: 0.002 s
+com.example.CalculatorTest.testInitialState  Time elapsed: 0.002 s
+com.example.CalculatorTest.testDivisionByZero  Time elapsed: 0.001 s
+com.example.CalculatorTest.testDivision  Time elapsed: 0.004 s
+com.example.CalculatorTest.testSubtraction  Time elapsed: 0.001 s
