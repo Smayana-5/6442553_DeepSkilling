@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- BookRepository bean definition -->
+    <bean id="bookRepository" class="com.library.repository.BookRepository" />
+    
+    <!-- BookService with Constructor Injection -->
+    <bean id="bookServiceConstructor" class="com.library.service.BookService">
+        <constructor-arg ref="bookRepository" />
+    </bean>
+    
+    <!-- BookService with Constructor Injection (multiple parameters) -->
+    <bean id="bookServiceConstructorMultiple" class="com.library.service.BookService">
+        <constructor-arg ref="bookRepository" />
+        <constructor-arg value="Library Management Service" />
+    </bean>
+    
+    <!-- BookService with Setter Injection -->
+    <bean id="bookServiceSetter" class="com.library.service.BookService">
+        <property name="bookRepository" ref="bookRepository" />
+        <property name="serviceName" value="Setter Injection Service" />
+    </bean>
+    
+    <!-- BookService with mixed Constructor and Setter Injection -->
+    <bean id="bookServiceMixed" class="com.library.service.BookService">
+        <constructor-arg ref="bookRepository" />
+        <property name="serviceName" value="Mixed Injection Service" />
+    </bean>
+
+</beans>
