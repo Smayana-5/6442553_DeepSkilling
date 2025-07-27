@@ -1,0 +1,31 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #f5f5f5;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.App-header h1 {
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.cohort-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Additional styling for better appearance */
+dl {
+  text-align: left;
+}
+
+dd {
+  margin-left: 20px;
+  margin-bottom: 8px;
+}
