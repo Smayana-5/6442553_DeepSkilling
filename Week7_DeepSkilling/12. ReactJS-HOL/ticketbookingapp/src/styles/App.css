@@ -1,0 +1,331 @@
+/* Custom styles for the Ticket Booking App */
+
+.app {
+  min-height: 100vh;
+}
+
+/* Header Styles */
+.header {
+  padding: 1rem;
+  color: white;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.header-guest {
+  background-color: #2563eb;
+}
+
+.header-user {
+  background-color: #059669;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Button Styles */
+.btn {
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+.btn-login {
+  background-color: white;
+  color: #2563eb;
+}
+
+.btn-login:hover {
+  background-color: #f3f4f6;
+  transform: translateY(-1px);
+}
+
+.btn-logout {
+  background-color: white;
+  color: #059669;
+}
+
+.btn-logout:hover {
+  background-color: #f3f4f6;
+  transform: translateY(-1px);
+}
+
+.btn-book {
+  background-color: #2563eb;
+  color: white;
+}
+
+.btn-book:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+.btn-disabled {
+  background-color: #d1d5db;
+  color: #6b7280;
+  cursor: not-allowed;
+}
+
+.btn-booked {
+  background-color: #d1d5db;
+  color: #6b7280;
+  cursor: not-allowed;
+}
+
+/* Main Content */
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+
+/* Card Styles */
+.card {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  padding: 1.5rem;
+}
+
+.welcome-card {
+  margin-bottom: 1.5rem;
+}
+
+.flights-card {
+  /* No additional styles needed */
+}
+
+/* Welcome Section */
+.welcome-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.welcome-text {
+  color: #4b5563;
+  margin: 0;
+}
+
+.booking-status {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background-color: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 0.5rem;
+}
+
+.booking-status-text {
+  color: #166534;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Flights Section */
+.flights-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.flights-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Flight Card */
+.flight-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  transition: all 0.3s ease;
+}
+
+.flight-card:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transform: translateY(-2px);
+}
+
+.flight-card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flight-details {
+  flex: 1;
+}
+
+.flight-airline {
+  font-weight: 600;
+  color: #2563eb;
+  margin: 0 0 0.5rem 0;
+}
+
+.flight-route {
+  color: #4b5563;
+  margin: 0 0 0.25rem 0;
+}
+
+.flight-time {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+.flight-pricing {
+  text-align: right;
+}
+
+.flight-price {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #059669;
+  margin: 0 0 0.5rem 0;
+}
+
+/* Booked Badge */
+.booked-badge {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  background-color: #dcfce7;
+  color: #166534;
+  font-size: 0.75rem;
+  border-radius: 9999px;
+}
+
+/* Booked Flights Section */
+.booked-flights-card {
+  margin-top: 1.5rem;
+}
+
+.booked-flights-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.booked-flight-item {
+  border-left: 4px solid #10b981;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: #f0fdf4;
+}
+
+.booked-flight-airline {
+  font-weight: 600;
+  margin: 0 0 0.25rem 0;
+}
+
+.booked-flight-details {
+  font-size: 0.875rem;
+  color: #4b5563;
+  margin: 0;
+}
+
+.booked-flight-price {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #059669;
+  margin: 0.25rem 0 0 0;
+}
+
+/* Animation for smooth transitions */
+.transition-page {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Status indicators */
+.status-booked {
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: white;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+/* Responsive design improvements */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .header-title {
+    font-size: 1.25rem;
+  }
+  
+  .main-content {
+    padding: 1rem 0.5rem;
+  }
+  
+  .flight-card-content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .flight-pricing {
+    text-align: center;
+  }
+}
+
+/* Loading states */
+.loading {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* Error states */
+.error-message {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+}
+
+/* Success states */
+.success-message {
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+}

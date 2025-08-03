@@ -1,0 +1,211 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+  min-height: 100vh;
+}
+
+.component-section {
+  margin: 30px 0;
+  padding: 20px;
+  border: 2px solid #61dafb;
+  border-radius: 10px;
+  background-color: rgba(97, 218, 251, 0.1);
+}
+
+.component-section h2 {
+  color: #61dafb;
+  margin-bottom: 20px;
+}
+
+/* Counter Styles */
+.counter-container h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.button-group {
+  margin: 20px 0;
+}
+
+.increment-btn, .decrement-btn {
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.increment-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.increment-btn:hover {
+  background-color: #45a049;
+}
+
+.decrement-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.decrement-btn:hover {
+  background-color: #da190b;
+}
+
+.message {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #ddd;
+  color: #333;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Welcome Button Styles */
+.welcome-btn {
+  padding: 12px 25px;
+  font-size: 16px;
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.welcome-btn:hover {
+  background-color: #0b7dda;
+}
+
+.welcome-message {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #e1f5fe;
+  color: #01579b;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Synthetic Event Button Styles */
+.synthetic-btn {
+  padding: 12px 25px;
+  font-size: 16px;
+  background-color: #FF9800;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.synthetic-btn:hover {
+  background-color: #e68900;
+}
+
+.click-message {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #fff3e0;
+  color: #e65100;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Currency Converter Styles */
+.currency-converter-container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.input-group {
+  margin: 20px 0;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #61dafb;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #21a1c4;
+}
+
+.convert-btn {
+  padding: 12px 30px;
+  font-size: 16px;
+  background-color: #9C27B0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+.convert-btn:hover {
+  background-color: #7b1fa2;
+}
+
+.conversion-result {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f3e5f5;
+  color: #4a148c;
+  border-radius: 5px;
+  border: 2px solid #9c27b0;
+}
+
+.conversion-result h4 {
+  margin-top: 0;
+  color: #6a1b9a;
+}
+
+.conversion-result p {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.conversion-result small {
+  color: #7b1fa2;
+  font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .component-section {
+    margin: 20px 10px;
+    padding: 15px;
+  }
+  
+  .button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .increment-btn, .decrement-btn {
+    margin: 0;
+  }
+}
